@@ -2,6 +2,9 @@ import pfp from "./pfp.jpg";
 import fcc1 from "./fcc1.PNG";
 import fcc2 from "./fcc2.PNG";
 import fcc3 from "./fcc3.PNG";
+import rqm from "./RQM.PNG";
+import drum from "./DrumMachine.PNG";
+import clock from "./Clock.PNG";
 import "./App.css";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,21 +15,27 @@ function App() {
   const [active, setActive] = useState(0);
   const projects = [
     {
-      name: "Random Quote Machine",
+      name: "Random-Quote",
       description: `Random quote machine is a web application that generates a random quote from a collection of quotes. It is built using React.js, HTML, and CSS. The quotes were fetched randomly using an API.`,
-      backgroundUrl: "RQM.PNG",
+      backgroundUrl: rqm,
       WebsiteLink: "https://th0massh3lby.github.io/Random-Quote-Machine/",
       GitLink: "https://github.com/Th0masSh3lby/Random-Quote-Machine",
     },
+
     {
-      name: "Crooked Colours",
-      description: `Crooked Colours are a three-piece band formed in Perth, Western Australia, consisting of members Phil Slabber, Leon Debaughn and Liam Merrett-Park. Starting out as house party DJs before forming in 2013, the trio have amassed a large following, peaking at number 1 on the Australian Dance Album ARIA Charts for their album "Langata".`,
-      backgroundUrl: "https://assets.codepen.io/152347/crooked-colours.jpg",
+      name: "Drum Machine",
+      description: `
+      This website is a drum machine that can be used to create and play custom beats. It was created using React.js, HTML, and CSS. The website is simple to use and allows users to create beats by clicking on the different drum pads. `,
+      backgroundUrl: drum,
+      WebsiteLink: "https://th0massh3lby.github.io/drum-machine/",
+      GitLink: "https://github.com/Th0masSh3lby/drum-machine",
     },
     {
-      name: "Mallrat",
-      description: `Grace Kathleen Elizabeth Shaw, known professionally as Mallrat, is a 23-year-old Australian musician, singer, and rapper from Brisbane.  Mallrat released her official debut single, “Suicide Blonde” in 2015 whilst in her last year of High School. Since then, she has gone on to release three EPs: Uninvited (2016), In the Sky (2018) and Driving Music (2019).`,
-      backgroundUrl: "https://assets.codepen.io/152347/mallrat.jpg",
+      name: "Pomodoro Clock",
+      description: `This website is an easy to use pomodoro clock.  The user can choose the length of the pomodoro intervals and the length of the breaks. It was created using various React hooks, CSS and HTML.`,
+      backgroundUrl: clock,
+      WebsiteLink: "https://th0massh3lby.github.io/Clock-25-5/",
+      GitLink: "https://github.com/Th0masSh3lby/Clock-25-5",
     },
   ];
 
@@ -41,18 +50,48 @@ function App() {
           inclusive products and digital experiences for the web.
         </p>
 
-        <div className="headers"> ------ About ------</div>
-        <div className="headers"> ------ Skills -------</div>
-        <div className="headers"> ----- Projects ---</div>
+        <div className="headers">
+          {" "}
+          <a className="header-id" href="#about">
+            ------ About ------
+          </a>
+        </div>
+        <div className="headers">
+          {" "}
+          <a className="header-id" href="#skills">
+            ------ Skills -------
+          </a>
+        </div>
+        <div className="headers">
+          {" "}
+          <a className="header-id" href="#Projects">
+            ----- Projects ---
+          </a>
+        </div>
 
         <div className="socials">
-          <a id="Gmail" className="profile-link" target="_blank" href="#">
+          <a
+            id="Gmail"
+            className="profile-link"
+            target="_blank"
+            href="mailto: aravind.choppa@alumini.iith.ac.in"
+          >
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <a id="LinkedIn" className="profile-link" target="_blank" href="#">
+          <a
+            id="LinkedIn"
+            className="profile-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/aravind-reddy-272898279/"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a id="Github" className="profile-link" target="_blank" href="#">
+          <a
+            id="Github"
+            className="profile-link"
+            target="_blank"
+            href="https://github.com/Th0masSh3lby"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
@@ -171,26 +210,49 @@ function App() {
           </p>
         </section>
         <section id="Projects">
-          <h2 id="Projects-header">Projects</h2>
+          <h2 id="Projects-header">Recent Projects</h2>
           <ul className="AllProjects">
             {projects.map((artist, i) => {
               return (
                 <li
                   key={i}
-                  style={{ backgroundImage: `url(${artist.backgroundUrl})` }}
                   role="button"
+                  style={{ backgroundImage: `url(${artist.backgroundUrl})` }}
                   className={active === i ? "MP active" : "MP"}
                   onClick={() => setActive(i)}
                 >
-                  {" "}
                   <h3 id="AR">{artist.name}</h3>
                   <div className="section-content">
                     <div className="inner">
                       <div className="bio">
                         <h2 className="AN">{artist.name}</h2>
                         <p>{artist.description}</p>
-                        <div className="Demo"></div>
-                        <div className="Github"></div>
+                        <div className="Links">
+                          <div className="Demo">
+                            <a
+                              href={artist.WebsiteLink}
+                              target="_blank"
+                              className="projectLink"
+                            >
+                              <FontAwesomeIcon
+                                className="Projecticon"
+                                icon={faArrowRight}
+                              />
+                            </a>
+                          </div>
+                          <div className="Github">
+                            <a
+                              href={artist.GitLink}
+                              target="_blank"
+                              className="projectLink"
+                            >
+                              <FontAwesomeIcon
+                                className="Projecticon"
+                                icon={faGithub}
+                              />
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
