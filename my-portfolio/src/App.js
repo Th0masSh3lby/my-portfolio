@@ -104,8 +104,7 @@ function App() {
             engineering, I was excited to start my career. I had always been
             interested in technology, and I was eager to put my skills to use.
             However, I quickly realized that the job market for electrical
-            engineers was very competitive especially the Indian Engineering
-            Services(IES).
+            engineers was very competitive.
           </p>
           <p>
             After struggling to find a job, I decided to take a step back and
