@@ -1,0 +1,344 @@
+.App {
+  padding: 15px;
+  background: linear-gradient(to right, rgb(1, 1, 32), black);
+
+  color: whitesmoke;
+}
+
+.Main {
+  position: fixed;
+  max-width: 43%;
+  max-height: 100vh;
+  margin-top: 5%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 19px;
+  margin-top: 2px;
+}
+
+#main-sub {
+  margin-top: 1px;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.headers {
+  display: block;
+  background-color: rgb(1, 1, 32);
+  transition: background-color 0.2s ease-in;
+  width: 100px;
+  height: 25px;
+  margin: 2px;
+  padding-top: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  font-size: 15px;
+}
+
+.headers:hover {
+  background-color: white;
+  color: black;
+  transform: translate(1px, 1px);
+  transform: skew(-0.03turn, 3deg);
+}
+
+.socials {
+  margin-top: 35px;
+
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+}
+
+.profile-link {
+  font-size: 35px;
+  color: rgb(104, 101, 101);
+  margin-left: 30px;
+}
+
+.profile-link:hover {
+  color: white;
+  transform: translate(2px, 2px);
+}
+
+.Detail {
+  margin-left: 47%;
+  padding: 3%;
+  margin-right: 2%;
+}
+
+#about {
+  font-size: large;
+}
+
+#skills {
+  margin-top: 45px;
+}
+
+#skills-header {
+  margin-bottom: 0;
+}
+
+.Certification {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.Certification:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+.skill-i {
+  font-weight: 700;
+  font-style: italic;
+}
+.fcc {
+  display: block;
+  width: 80%;
+  object-fit: cover;
+  margin: 10px;
+  border: transparent solid 1px;
+}
+
+.fcc:hover {
+  border: white solid 1px;
+  margin: 9px;
+}
+
+#Projects {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#Projects-header {
+}
+
+/* profile picture animation*/
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+:root {
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+}
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+#pfp {
+  max-width: 25%;
+  max-height: 25%;
+  background: transparent;
+  overflow: hidden;
+  border: solid 3px;
+  object-fit: cover;
+
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
+  animation: borderRotate 3s linear infinite forwards;
+}
+
+@keyframes flipphoto {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+#pfp:hover {
+  border: none;
+  border-radius: 80px;
+  animation: flipphoto 2s ease-in-out;
+}
+
+/* projects CSS */
+.bio {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: min-content;
+  grid-gap: 5px;
+}
+
+ul {
+  display: flex;
+  min-height: 400px;
+  height: 60vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  width: 100%;
+  min-width: 100%;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1280px) {
+  ul {
+    flex-direction: row;
+  }
+}
+
+li {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  overflow: hidden;
+}
+li:before {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.75);
+}
+li.active {
+  flex: 7;
+  cursor: default;
+}
+li.active:before {
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, #111111 100%);
+}
+
+.AN {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .AN {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .AN {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+#AR {
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 30;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transition: top 0.35s, opacity 0.15s;
+  transform-origin: 0 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+@media only screen and (min-width: 1280px) {
+  #AR {
+    top: 90%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-20px, -50%) rotate(-90deg);
+  }
+}
+.active #AR {
+  opacity: 0;
+  top: 200%;
+}
+
+.section-content {
+  position: relative;
+  z-index: 30;
+  opacity: 0;
+  align-self: flex-end;
+  width: 100%;
+  transition: all 0.35s 0.1s ease-out;
+}
+.active .section-content {
+  opacity: 1;
+}
+.section-content .inner {
+  position: absolute;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}
+@media only screen and (min-width: 768px) {
+  .section-content .inner {
+    grid-auto-flow: column;
+    grid-template-columns: calc(100% - 340px) 300px;
+    grid-column-gap: 40px;
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .section-content .inner {
+    grid-auto-flow: column;
+    grid-template-columns: 360px 200px;
+    grid-column-gap: 40px;
+    padding: 40px;
+  }
+}
+.active .section-content .inner {
+  opacity: 1;
+}
+
+.artist-profile-link {
+  pointer-events: none;
+}
+.active .artist-profile-link {
+  pointer-events: all;
+}
