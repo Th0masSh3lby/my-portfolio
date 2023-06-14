@@ -4,6 +4,7 @@ import fcc2 from "./fcc2.PNG";
 import fcc3 from "./fcc3.PNG";
 import rqm from "./RQM.PNG";
 import drum from "./DrumMachine.PNG";
+import fccmag from "./fccMag.PNG";
 import clock from "./Clock.PNG";
 import "./App.css";
 import React, { useState } from "react";
@@ -29,6 +30,14 @@ function App() {
       backgroundUrl: drum,
       WebsiteLink: "https://th0massh3lby.github.io/drum-machine/",
       GitLink: "https://github.com/Th0masSh3lby/drum-machine",
+    },
+    {
+      name: "FCC Magazine",
+      description: `
+      This website is a single page application done as a part of my Responsive Web Design Certification. Created using HTML and CSS. It was made such that the page responds responsively to the screensize. `,
+      backgroundUrl: fccmag,
+      WebsiteLink: "https://th0massh3lby.github.io/FreeCodeCamp-magazine/",
+      GitLink: "https://github.com/Th0masSh3lby/FreeCodeCamp-magazine",
     },
     {
       name: "Pomodoro Clock",
