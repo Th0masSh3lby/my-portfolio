@@ -1,0 +1,64 @@
+.Mains {
+  color: whitesmoke;
+}
+
+.actual {
+  background: linear-gradient(to right, rgb(1, 1, 32), black);
+  max-width: 100%;
+  width: 100vw;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pname {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.ProjectS {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  gap: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.pr {
+  display: block;
+  width: 90%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.pr:hover {
+  filter: blur();
+}
+
+.ProjectS:hover {
+  background: rgb(32, 32, 37);
+}
+
+.allGithub {
+  background: black;
+  width: 60px;
+  height: 60px;
+
+  text-align: center;
+  border-radius: 30px;
+}
+.allprojectLink {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
+
+.allGithub:hover {
+  filter: invert();
+}
