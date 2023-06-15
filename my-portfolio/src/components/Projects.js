@@ -2,11 +2,21 @@ import rqm from "./RQM.PNG";
 import drum from "./DrumMachine.PNG";
 import fccmag from "./fccMag.PNG";
 import clock from "./Clock.PNG";
+import calc from "./Calc.PNG";
+import mark from "./markdown.PNG";
 import "./projects.css";
+import tts from "./Text-to-Speech.PNG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const allProjects = [
+  {
+    name: "Text-to-Speech",
+    description: `This Text-to-Speech Converter is a web application built using React.js, HTML, and CSS. It leverages the Web Speech API to provide users with an easy-to-use interface for converting text into speech. The application allows users to input text, select a voice from a list of available options, and listen to the text being spoken in the chosen voice.`,
+    backgroundUrl: tts,
+    WebsiteLink: "https://th0massh3lby.github.io/text-to-voice/",
+    GitLink: "https://github.com/Th0masSh3lby/text-to-voice",
+  },
   {
     name: "Random-Quote",
     description: `Random quote machine is a web application that generates a random quote from a collection of quotes. It is built using React.js, HTML, and CSS. The quotes were fetched randomly using an API.`,
@@ -23,6 +33,15 @@ const allProjects = [
     WebsiteLink: "https://th0massh3lby.github.io/drum-machine/",
     GitLink: "https://github.com/Th0masSh3lby/drum-machine",
   },
+
+  {
+    name: "Calculator",
+    description: `
+    This code is for a simple calculator web application built using React.js, HTML and CSS. The calculator has a display area and buttons for numbers, decimal point, operators (+, -, *, /), clear (AC), and equals (=). The calculator can perform basic arithmetic operations and evaluates the expression when the equals button is clicked.`,
+    backgroundUrl: calc,
+    WebsiteLink: "https://th0massh3lby.github.io/Calculator/",
+    GitLink: "https://github.com/Th0masSh3lby/Calculator",
+  },
   {
     name: "FCC Magazine",
     description: `
@@ -37,6 +56,14 @@ const allProjects = [
     backgroundUrl: clock,
     WebsiteLink: "https://th0massh3lby.github.io/Clock-25-5/",
     GitLink: "https://github.com/Th0masSh3lby/Clock-25-5",
+  },
+
+  {
+    name: "Markdown Editor and Previewer",
+    description: `This Markdown Editor and Previewer is a web application built using React.js, HTML, and CSS. It provides users with an intuitive interface to write and edit Markdown text while simultaneously previewing the formatted output in real-time. The application leverages the 'marked' library to parse and render the Markdown text into HTML.`,
+    backgroundUrl: mark,
+    WebsiteLink: "https://Th0masSh3lby.github.io/Markdown-Previewer/",
+    GitLink: "https://github.com/Th0masSh3lby/Markdown-Previewer",
   },
 ];
 

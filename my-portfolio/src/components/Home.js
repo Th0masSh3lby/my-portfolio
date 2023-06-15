@@ -5,7 +5,7 @@ import fcc3 from "./fcc3.PNG";
 import rqm from "./RQM.PNG";
 import drum from "./DrumMachine.PNG";
 import fccmag from "./fccMag.PNG";
-import clock from "./Clock.PNG";
+import tts from "./Text-to-Speech.PNG";
 import "./Home.css";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,13 +25,13 @@ function Home() {
     },
 
     {
-      name: "Drum Machine",
-      description: `
-      This website is a drum machine that can be used to create and play custom beats. It was created using React.js, HTML, and CSS. The website is simple to use and allows users to create beats by clicking on the different drum pads. `,
-      backgroundUrl: drum,
-      WebsiteLink: "https://th0massh3lby.github.io/drum-machine/",
-      GitLink: "https://github.com/Th0masSh3lby/drum-machine",
+      name: "Text-to-Speech",
+      description: `This Text-to-Speech Converter is a web application built using React.js, HTML, and CSS. It leverages the Web Speech API to provide users with an easy-to-use interface for converting text into speech. The application allows users to input text, select a voice from a list of available options, and listen to the text being spoken in the chosen voice.`,
+      backgroundUrl: tts,
+      WebsiteLink: "https://th0massh3lby.github.io/text-to-voice/",
+      GitLink: "https://github.com/Th0masSh3lby/text-to-voice",
     },
+
     {
       name: "FCC Magazine",
       description: `
@@ -39,13 +39,6 @@ function Home() {
       backgroundUrl: fccmag,
       WebsiteLink: "https://th0massh3lby.github.io/FreeCodeCamp-magazine/",
       GitLink: "https://github.com/Th0masSh3lby/FreeCodeCamp-magazine",
-    },
-    {
-      name: "Pomodoro Clock",
-      description: `This website is an easy to use pomodoro clock.  The user can choose the length of the pomodoro intervals and the length of the breaks. It was created using various React hooks, CSS and HTML.`,
-      backgroundUrl: clock,
-      WebsiteLink: "https://th0massh3lby.github.io/Clock-25-5/",
-      GitLink: "https://github.com/Th0masSh3lby/Clock-25-5",
     },
   ];
 
