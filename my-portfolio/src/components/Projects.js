@@ -3,7 +3,7 @@ import drum from "./DrumMachine.PNG";
 import fccmag from "./fccMag.PNG";
 import clock from "./Clock.PNG";
 import calc from "./Calc.PNG";
-import mark from "./markdown.PNG";
+import mark from "./mardown.PNG";
 import "./projects.css";
 import tts from "./Text-to-Speech.PNG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
