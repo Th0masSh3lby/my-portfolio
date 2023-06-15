@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.b06c30f7.css",
-    "main.js": "/my-portfolio/static/js/main.b9c7f882.js",
+    "main.js": "/my-portfolio/static/js/main.539ee4e0.js",
     "static/media/pfp.jpg": "/my-portfolio/static/media/pfp.ebc58f514eee95ef9e92.jpg",
     "static/media/fccMag.PNG": "/my-portfolio/static/media/fccMag.789560ca85ca423a6bc9.PNG",
     "static/media/fcc2.PNG": "/my-portfolio/static/media/fcc2.6430b1a2e3cdda3ef792.PNG",
@@ -10,12 +10,13 @@
     "static/media/Clock.PNG": "/my-portfolio/static/media/Clock.b6d32bfe7fc70a4ba98f.PNG",
     "static/media/RQM.PNG": "/my-portfolio/static/media/RQM.92788bc5dd370043e2c4.PNG",
     "static/media/DrumMachine.PNG": "/my-portfolio/static/media/DrumMachine.aa0f04ce1ada714e2d0e.PNG",
+    "static/media/Text-to-Speech.PNG": "/my-portfolio/static/media/Text-to-Speech.e2b0d91acb706a060bb1.PNG",
     "index.html": "/my-portfolio/index.html",
     "main.b06c30f7.css.map": "/my-portfolio/static/css/main.b06c30f7.css.map",
-    "main.b9c7f882.js.map": "/my-portfolio/static/js/main.b9c7f882.js.map"
+    "main.539ee4e0.js.map": "/my-portfolio/static/js/main.539ee4e0.js.map"
   },
   "entrypoints": [
     "static/css/main.b06c30f7.css",
-    "static/js/main.b9c7f882.js"
+    "static/js/main.539ee4e0.js"
   ]
 }
