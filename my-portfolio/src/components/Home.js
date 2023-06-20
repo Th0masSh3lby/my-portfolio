@@ -196,7 +196,7 @@ function Home() {
                 Applications (SPAs) with{" "}
                 <span className="skill-i">React.js</span> and{" "}
                 <span className="skill-i">Redux.js</span>. I have also learnt
-                how to style your site quickly with{" "}
+                how to style a website quickly with{" "}
                 <span className="skill-i">Bootstrap</span> and{" "}
                 <span className="skill-i">Sass</span>.
               </p>
