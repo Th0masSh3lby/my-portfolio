@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.b06c30f7.css",
-    "main.js": "/my-portfolio/static/js/main.67eaff37.js",
+    "main.js": "/my-portfolio/static/js/main.6c1526c4.js",
     "static/media/pfp.jpg": "/my-portfolio/static/media/pfp.ebc58f514eee95ef9e92.jpg",
     "static/media/fccMag.PNG": "/my-portfolio/static/media/fccMag.789560ca85ca423a6bc9.PNG",
     "static/media/Pokedex.PNG": "/my-portfolio/static/media/Pokedex.b3ee5c327a946c3088d5.PNG",
@@ -9,6 +9,7 @@
     "static/media/fcc3.PNG": "/my-portfolio/static/media/fcc3.1e795e906a0d7d6555e1.PNG",
     "static/media/fcc1.PNG": "/my-portfolio/static/media/fcc1.ef76e8f34c189cc83ccf.PNG",
     "static/media/mardown.PNG": "/my-portfolio/static/media/mardown.8f333c5dead88eab42e7.PNG",
+    "static/media/Task.PNG": "/my-portfolio/static/media/Task.db200628951f0236e40f.PNG",
     "static/media/Clock.PNG": "/my-portfolio/static/media/Clock.b6d32bfe7fc70a4ba98f.PNG",
     "static/media/RQM.PNG": "/my-portfolio/static/media/RQM.92788bc5dd370043e2c4.PNG",
     "static/media/DrumMachine.PNG": "/my-portfolio/static/media/DrumMachine.aa0f04ce1ada714e2d0e.PNG",
@@ -16,10 +17,10 @@
     "static/media/Calc.PNG": "/my-portfolio/static/media/Calc.931a51f99047aa1578e0.PNG",
     "index.html": "/my-portfolio/index.html",
     "main.b06c30f7.css.map": "/my-portfolio/static/css/main.b06c30f7.css.map",
-    "main.67eaff37.js.map": "/my-portfolio/static/js/main.67eaff37.js.map"
+    "main.6c1526c4.js.map": "/my-portfolio/static/js/main.6c1526c4.js.map"
   },
   "entrypoints": [
     "static/css/main.b06c30f7.css",
-    "static/js/main.67eaff37.js"
+    "static/js/main.6c1526c4.js"
   ]
 }
