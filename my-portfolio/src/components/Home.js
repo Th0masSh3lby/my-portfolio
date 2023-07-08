@@ -3,7 +3,8 @@ import fcc1 from "./fcc1.PNG";
 import fcc2 from "./fcc2.PNG";
 import fcc3 from "./fcc3.PNG";
 import rqm from "./RQM.PNG";
-import drum from "./DrumMachine.PNG";
+import Pokedex from "./Pokedex.PNG";
+import Task from "./Task.PNG";
 import fccmag from "./fccMag.PNG";
 import tts from "./Text-to-Speech.PNG";
 import "./Home.css";
@@ -17,11 +18,19 @@ function Home() {
   const [active, setActive] = useState(0);
   const projects = [
     {
-      name: "Random-Quote",
-      description: `Random quote machine is a web application that generates a random quote from a collection of quotes. It is built using React.js, HTML, and CSS. The quotes were fetched randomly using an API.`,
-      backgroundUrl: rqm,
-      WebsiteLink: "https://th0massh3lby.github.io/Random-Quote-Machine/",
-      GitLink: "https://github.com/Th0masSh3lby/Random-Quote-Machine",
+      name: "Pokedex",
+      description: `
+      This website is a three page application made using React.js and PokeAPi. Key features include Infinite scroll(More Items load as you scroll down), Bookmarks page(content bookmarked from different pages can be seen here), and Search Page.`,
+      backgroundUrl: Pokedex,
+      WebsiteLink: "https://th0massh3lby.github.io/pokedex/",
+      GitLink: "https://github.com/Th0masSh3lby/pokedex",
+    },
+    {
+      name: "Task Manager",
+      description: `Task Manager is a web application built using Next.js and typescript. Implemented the CRUD functionality using mst store. Styling is done using Tailwind CSS.`,
+      backgroundUrl: Task,
+      WebsiteLink: "https://task-manager-black-beta.vercel.app/",
+      GitLink: "https://github.com/Th0masSh3lby/task-manager",
     },
 
     {
@@ -31,15 +40,6 @@ function Home() {
       WebsiteLink: "https://th0massh3lby.github.io/text-to-voice/",
       GitLink: "https://github.com/Th0masSh3lby/text-to-voice",
     },
-
-    {
-      name: "FCC Magazine",
-      description: `
-      This website is a single page application done as a part of my Responsive Web Design Certification. Created using HTML and CSS. It was made such that the page responds responsively to the screensize. `,
-      backgroundUrl: fccmag,
-      WebsiteLink: "https://th0massh3lby.github.io/FreeCodeCamp-magazine/",
-      GitLink: "https://github.com/Th0masSh3lby/FreeCodeCamp-magazine",
-    },
   ];
 
   return (
@@ -48,10 +48,7 @@ function Home() {
         <img id="pfp" alt="profile-picture" src={pfp} />
         <h1>Aravind Reddy C.</h1>
 
-        <p id="main-sub">
-          Aspiring to become a part of the technology world. I build accessible,
-          inclusive products and digital experiences for the web.
-        </p>
+        <p id="main-sub">Bringing creativity to the web, one pixel at a time</p>
 
         <div className="headers">
           {" "}

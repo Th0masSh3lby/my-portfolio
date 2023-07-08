@@ -4,12 +4,30 @@ import fccmag from "./fccMag.PNG";
 import clock from "./Clock.PNG";
 import calc from "./Calc.PNG";
 import mark from "./mardown.PNG";
+import Pokedex from "./Pokedex.PNG";
+import Task from "./Task.PNG";
 import "./projects.css";
 import tts from "./Text-to-Speech.PNG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const allProjects = [
+  {
+    name: "Pokedex",
+    description: `
+    This website is a three page application made using React.js and PokeAPi. Key features include Infinite scroll(More Items load as you scroll down), Bookmarks page(content bookmarked from different pages can be seen here), and Search Page.`,
+    backgroundUrl: Pokedex,
+    WebsiteLink: "https://th0massh3lby.github.io/pokedex/",
+    GitLink: "https://github.com/Th0masSh3lby/pokedex",
+  },
+
+  {
+    name: "Task Manager",
+    description: `Task Manager is a web application built using Next.js and typescript. Implemented the CRUD functionality using mst store. Styling is done using Tailwind CSS.`,
+    backgroundUrl: Task,
+    WebsiteLink: "https://task-manager-black-beta.vercel.app/",
+    GitLink: "https://github.com/Th0masSh3lby/task-manager",
+  },
   {
     name: "Text-to-Speech",
     description: `This Text-to-Speech Converter is a web application built using React.js, HTML, and CSS. It leverages the Web Speech API to provide users with an easy-to-use interface for converting text into speech. The application allows users to input text, select a voice from a list of available options, and listen to the text being spoken in the chosen voice.`,
